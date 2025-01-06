@@ -14,7 +14,7 @@ This PowerShell project automates system health checks, logs metrics, and genera
 - For Windows: It’s pre-installed.
 
 ### PSWriteHTML module
-- **Install the Module**: Run this command to install the PSWriteHTML module from the PowerShell Gallery:
+- **Install the Module**: Run this command to install the `PSWriteHTML` module from the PowerShell Gallery:
 ```
 Install-Module -Name PSWriteHTML -Force
 ```
@@ -34,36 +34,36 @@ git clone https://github.com/MenakaGodakanda//SystemHealthCheck.git
 
 ### 2. Run the scripts in the following order:
 
-#### 1. HealthCheck.ps1 Output
-This script collects system metrics and saves them in a JSON file. After running the script, the following outputs are generated:
-
-- HealthCheck.ps1: Collect system metrics.
+#### I. `HealthCheck.ps1`: Collect system metrics.
+- This script collects system metrics and saves them in a JSON file. After running the script, the following outputs are generated:
 ```
 .\HealthCheck.ps1
 ```
-Console Output:
+- `HealthCheck.ps1` Console Output:
 ![Screenshot 2025-01-06 130730](https://github.com/user-attachments/assets/b3fb9de1-e6a9-4460-9a27-45d829bb9622)
 
-The log file will contain detailed metrics in JSON format:
+- The `SystemHealthLog.json` log file will contain detailed metrics in JSON format:
 ![Screenshot 2025-01-06 132104](https://github.com/user-attachments/assets/ad5785d9-96f7-42db-b58f-5d8ae8d78bda)
 
-- GenerateReport.ps1: Generate an HTML report.
+
+#### II. `GenerateReport.ps1`: Generate an HTML report.
+- This script reads the JSON log and generates an HTML report summarizing the system health.
 ```
 .\GenerateReport.ps1
 ```
-Console Output:
+- `GenerateReport.ps1` Console Output:
 ![Screenshot 2025-01-06 130711](https://github.com/user-attachments/assets/da745b9d-9b9e-40d3-aece-3db46e6456ab)
 
 
-
-
-- MonitorServices.ps1: Monitor and manage critical services.
+#### III. `MonitorServices.ps1`: Monitor and manage critical services.
+- This script checks critical services and attempts to restart any stopped services.
 ```
 .\MonitorServices.ps1
 ```
+- `MonitorServices.ps1` Console Output:
 ![Screenshot 2025-01-06 130853](https://github.com/user-attachments/assets/63c7b11b-cd1a-4137-97b9-f6d6b81af842)
 
-- View logs in the Logs directory and reports in the Reports directory.
+#### IV. View logs in the Logs directory and reports in the Reports directory.
 
 ## File Structure:
 ```
