@@ -54,6 +54,9 @@ git clone https://github.com/MenakaGodakanda//SystemHealthCheck.git
 - `GenerateReport.ps1` Console Output:
 ![Screenshot 2025-01-06 130711](https://github.com/user-attachments/assets/da745b9d-9b9e-40d3-aece-3db46e6456ab)
 
+- Generated HTML Report (`HealthReport.html`) will include CPU and memory usage, and disk usage. Sample output in HTML:
+![Screenshot 2025-01-06 130655](https://github.com/user-attachments/assets/63eecc97-192d-418c-8b57-c5cbb2ea35c0)
+
 
 #### III. `MonitorServices.ps1`: Monitor and manage critical services.
 - This script checks critical services and attempts to restart any stopped services.
