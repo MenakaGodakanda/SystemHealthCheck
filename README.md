@@ -29,7 +29,7 @@ Get-Module -ListAvailable | Where-Object { $_.Name -eq "PSWriteHTML" }
 ### 1. Clone the repository:
 
 ```
-git clone https://github.com/MenakaGodakanda//SystemHealthCheck.git
+git clone https://github.com/MenakaGodakanda/SystemHealthCheck.git
 ```
 
 ### 2. Run the scripts in the following order:
