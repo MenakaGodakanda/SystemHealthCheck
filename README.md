@@ -1,7 +1,32 @@
 # System Health Check
 
-## Overview
 This PowerShell project automates system health checks, logs metrics, and generates reports. It monitors system performance, disk usage, and critical services.
+
+## Overview
+<img width="1243" alt="Screenshot 2025-01-30 at 9 16 14 pm" src="https://github.com/user-attachments/assets/78803689-292c-4699-9fa0-775ccd51531c" />
+
+### Explanation
+#### 1. Input Sources:
+- **System Metrics**: CPU, memory, and disk usage are collected.
+- **Critical Services**: Monitored services (e.g., `wuauserv`, `BITS`) and their statuses.
+
+#### 2. Core Script Logic:
+- `HealthCheck.ps1`:
+  - Collects system metrics (CPU, memory, disk).
+  - Logs the data in a JSON format file (`SystemHealthLog.json`).
+- `GenerateReport.ps1`:
+  - Reads the JSON log.
+  - Uses `PSWriteHTML` to generate a user-friendly HTML report.
+- `MonitorServices.ps1`:
+  - Monitors critical services.
+  - Restarts stopped services.
+  - Logs errors in `ErrorLog.txt`.
+
+#### 3. Output and Reports:
+- **Error Logs**: Tracks errors in service restarts or script execution.
+- **System Logs**: Contains system health metrics in JSON.
+- **HTML Reports**: Summarizes system health for easy review.
+
 
 ## Features
 - Collects CPU, memory, and disk usage.
